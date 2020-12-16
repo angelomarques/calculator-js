@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="app-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+    <div class="calculator">
+      <div class="display-output">
+        <p id="uparea"></p>
+        <h1 id="display-digits"></h1>
+      </div>
+      <div class="keyboard">
+        <div id="backspaceAll" onclick="backButton(this.id)" class="calculator-button"><h2>AC</h2></div>
+        <div id="backspace" onclick="backButton(this.id)" class="calculator-button"><h2>C</h2></div>
+        <div id="porcentage" onclick="operation(this.id)" class="calculator-button"><h2>%</h2></div>
+        <div id="divide" onclick="operation(this.id)" class="calculator-button"><h2>/</h2></div>
+        <div id="7" onclick="printNumber(this.id)" class="calculator-button"><h2>7</h2></div>
+        <div id="8" onclick="printNumber(this.id)" class="calculator-button"><h2>8</h2></div>
+        <div id="9" onclick="printNumber(this.id)" class="calculator-button"><h2>9</h2></div>
+        <div id="multiplicate" onclick="operation(this.id)" class="calculator-button"><h2>X</h2></div>
+        <div id="4" onclick="printNumber(this.id)" class="calculator-button"><h2>4</h2></div>
+        <div id="5" onclick="printNumber(this.id)" class="calculator-button"><h2>5</h2></div>
+        <div id="6" onclick="printNumber(this.id)" class="calculator-button"><h2>6</h2></div>
+        <div id="minus" onclick="operation(this.id)" class="calculator-button"><h2>-</h2></div>
+        <div id="1" onclick="printNumber(this.id)" class="calculator-button"><h2>1</h2></div>
+        <div id="2" onclick="printNumber(this.id)" class="calculator-button"><h2>2</h2></div>
+        <div id="3" onclick="printNumber(this.id)" class="calculator-button"><h2>3</h2></div>
+        <div id="plus" onclick="operation(this.id)" class="calculator-button"><h2>+</h2></div>
+        <div id="0" onclick="printNumber(this.id)" class="calculator-button"><h2>0</h2></div>
+        <div id="dot" onclick="printNumber(this.id)" class="calculator-button"><h2>.</h2></div>
+        <div id="equal" onclick="operation(this.id)" class="calculator-button"><h2>=</h2></div>
+      </div>
+    </div>
+    <script src="app-script.js"></script>
+  </body>
+</html>
